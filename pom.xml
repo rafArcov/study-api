@@ -8,11 +8,19 @@
 		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+<<<<<<< HEAD
 	<groupId>com.github.acnaweb</groupId>
 	<artifactId>study-apir</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>study-apir</name>
 	<description>API de estudos</description>
+=======
+	<groupId>com.github.rafarcov</groupId>
+	<artifactId>study-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>study-api</name>
+	<description>Aplicação de estudo de API</description>
+>>>>>>> ff495bcc0087d1367dfb6ce8f9f1c4ba0ba7eda3
 	<url/>
 	<licenses>
 		<license/>
@@ -30,6 +38,7 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+<<<<<<< HEAD
 
 		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 		<dependency>
@@ -55,6 +64,8 @@
 			<optional>true</optional>
 		</dependency>
 
+=======
+>>>>>>> ff495bcc0087d1367dfb6ce8f9f1c4ba0ba7eda3
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
