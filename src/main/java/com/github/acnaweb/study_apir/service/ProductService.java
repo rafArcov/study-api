@@ -31,33 +31,29 @@ public class ProductService {
     }
 
     public Optional<Product> getProductById(Long id) {
-        // return products.stream()
-        //     .filter(p -> p.getId().equals(id))
-        //     .findFirst();
-        return null;
+        return productRepository.findById(id);
     }
 
     public List<Product> getAll() {
-        return null;
+        return productRepository.findAll();
     }
 
     public Optional<Product> updateProduct(
             Long id, ProductRequestUpdate dto) {
-
-        // return products.stream()
-        //     .filter(p -> p.getId().equals(id))
-        //     .findFirst()
-        //     .map(p -> {                
-        //         p.setValor(dto.getValor());
-        //         return p;
-        //         }
-        //     );
-
-        return null;
+                Product product = new Product();
+                product.setId(id);
+                product.setValor(dto.getValor());
+                
+                return null;
     }
 
     public boolean deleteProduct(Long id) {
-        // return products.removeIf(p -> p.getId().equals(id));
+
+        if (productRepository.existsById(id)) {
+            productRepository.deleteById(id);
+            return true;
+        }       
+        }
         return false;
     }
-}
+
